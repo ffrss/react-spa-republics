@@ -3,7 +3,7 @@ import Chart from "chart.js/auto";
 import { IFilteredTableProps } from "../../data/models";
 
 const LineChart: React.FC<IFilteredTableProps> = ({ data }) => {
-  const [selectedRegions, setSelectedRegions] = useState([]);
+  const [selectedRegions, setSelectedRegions] = useState<string[]>([]);
 
   useEffect(() => {
     const filteredData = data.filter((item) =>
