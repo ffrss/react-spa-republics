@@ -67,8 +67,8 @@ const Dropdown: React.FC<IPropsData> = ({ data }) => {
         <FilteredTable data={data} selectedRegions={selectedRegions} />
         <LineChart
           data={data}
-          selectedRegions={selectedRegions}
-          setSelectedRegions={setSelectedRegions}
+          // selectedRegions={selectedRegions}
+          // setSelectedRegions={setSelectedRegions}
         />
       </div>
     </>
